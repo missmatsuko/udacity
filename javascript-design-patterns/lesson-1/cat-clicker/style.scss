@@ -18,11 +18,23 @@ button {
   min-height: 100vh;
 
   &__inner {
-    max-width: 300px;
-    padding: 20px;
+    padding: 50px;
   }
 }
 
 .heading, .subheading {
   margin: 0;
+}
+
+.team {
+  display: flex;
+
+  &__item {
+    padding: 20px;
+  }
+
+  &__name {
+    display: block;
+    padding: 15px;
+  }
 }

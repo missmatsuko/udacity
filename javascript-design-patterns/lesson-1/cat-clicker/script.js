@@ -1,23 +1,27 @@
-const buttonEl = document.querySelector('.js-button');
-const countEl = document.querySelector('.js-count');
+const teamEls = document.querySelectorAll('.js-team');
 
-const count = (function() {
-  let counter = 0;
+teamEls.forEach(function(el) {
+  const buttonEl = el.querySelector('.js-button');
+  const countEl = el.querySelector('.js-count');
 
-  function increment() {
-    counter++;
-  }
+  const count = (function() {
+    let counter = 0;
 
-  function updateText() {
-    countEl.innerText = counter;
-  }
-
-  return {
-    updateCount: function() {
-      increment();
-      updateText();
+    function increment() {
+      counter++;
     }
-  }
-})();
 
-buttonEl.addEventListener('click', count.updateCount);
+    function updateText() {
+      countEl.innerText = counter;
+    }
+
+    return {
+      updateCount: function() {
+        increment();
+        updateText();
+      }
+    }
+  })();
+
+  buttonEl.addEventListener('click', count.updateCount);
+});
