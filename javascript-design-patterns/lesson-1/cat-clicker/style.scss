@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #355c7d;
+  color: white;
+}
+
+button {
+  padding: 0;
+  border: none;
+  display: inline-block;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  &__inner {
+    max-width: 300px;
+    padding: 20px;
+  }
+}
+
+.heading, .subheading {
+  margin: 0;
+}
