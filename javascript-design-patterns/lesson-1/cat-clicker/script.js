@@ -31,15 +31,16 @@ teamEls.forEach(function(el){
 toggleTeam = function(event) {
   event.preventDefault();
 
+  const activeEls = document.querySelectorAll('.active');
   const targetEl = event.target;
   const selectedEl = document.querySelector(targetEl.hash);
-  const activeEls = document.querySelectorAll('.active');
 
   activeEls.forEach(function(el){
     el.classList.remove('active');
   });
   targetEl.classList.add('active');
   selectedEl.classList.add('active');
+  selectedEl.focus();
 }
 
 document.querySelectorAll('.js-nav a').forEach(function(el){
