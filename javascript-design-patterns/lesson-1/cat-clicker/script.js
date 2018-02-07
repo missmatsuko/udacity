@@ -5,26 +5,12 @@ teamEls.forEach(function(el){
   const buttonEl = el.querySelector('.js-button');
   const countEl = el.querySelector('.js-count');
 
-  const counter = (function() {
-    let count = 0;
+  let count = 0;
 
-    function increment() {
-      count++;
-    }
-
-    function updateText() {
-      countEl.innerText = count;
-    }
-
-    return {
-      updateCount: function() {
-        increment();
-        updateText();
-      }
-    }
-  })();
-
-  buttonEl.addEventListener('click', counter.updateCount);
+  buttonEl.addEventListener('click', function() {
+    count++;
+    countEl.innerText = count;
+  });
 });
 
 // Toggle which cat is displayed
