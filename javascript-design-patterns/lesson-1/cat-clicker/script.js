@@ -1,18 +1,18 @@
 const teamEls = document.querySelectorAll('.js-team');
 
-teamEls.forEach(function(el) {
+teamEls.forEach(function(el){
   const buttonEl = el.querySelector('.js-button');
   const countEl = el.querySelector('.js-count');
-
-  const count = (function() {
-    let counter = 0;
+  
+  const counter = (function() {
+    let count = 0;
 
     function increment() {
-      counter++;
+      count++;
     }
 
     function updateText() {
-      countEl.innerText = counter;
+      countEl.innerText = count;
     }
 
     return {
@@ -22,6 +22,6 @@ teamEls.forEach(function(el) {
       }
     }
   })();
-
-  buttonEl.addEventListener('click', count.updateCount);
+  
+  buttonEl.addEventListener('click', counter.updateCount);
 });
