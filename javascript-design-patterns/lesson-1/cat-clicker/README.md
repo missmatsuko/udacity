@@ -14,7 +14,7 @@ The requirements for this lesson's project keep changing.
   - text showing the number of clicks
 - The specifics of the layout do not matter, so style it however you'd like.
 
-### Part 3:
+### Part 3
 - The application should display a list of at least 5 cats, listed by name
 - Have an area to display the selected cat
 - In the cat display area, the following should be displayed:
