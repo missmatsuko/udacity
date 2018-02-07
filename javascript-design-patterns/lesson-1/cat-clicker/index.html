@@ -1,25 +1,76 @@
-<main class="main">
-  <div class="main__inner">
-    <h1 class="heading">Cat Clicker</h1>
-    <p class="subheading">Click a cat!</p>
+<div class="container">
+  <div class="container__inner">
+    <header>
+      <h1 class="heading heading--main">Cat Clicker</h1>
+      <p class="heading">Pick a cat, then click a cat!</p>
+    </header>
 
-    <div class="team">
-      <div class="team__item js-team">
-        <p>Number of clicks: <span class="js-count">0</span></p>
-        <button class="js-button">
-          <img src="http://lorempixel.com/300/300/cats/1" alt="">
-          <span class="team__name">Bob the Cat</span>
-        </button>
+    <main class="main">
+      <div class="main__inner">
+
+        <nav class="nav js-nav">
+          <ul class="nav__list">
+            <li>
+              <a href="#bob-the-cat" class="active">Bob the Cat</a>
+            </li>
+            <li>
+              <a href="#marley-the-cat">Marley the Cat</a>
+            </li>
+            <li>
+              <a href="#william-the-cat">William the Cat</a>
+            </li>
+            <li>
+              <a href="#shakes-the-cat">Shakes the Cat</a>
+            </li>
+            <li>
+              <a href="#peare-the-cat">Peare the Cat</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="team">
+          <div id="bob-the-cat" class="team__item js-team active">
+            <h2 class="heading">Bob the Cat</h2>
+            <p class="team__count">Number of clicks: <span class="js-count">0</span></p>
+            <button class="team__button js-button">
+              <img src="http://lorempixel.com/300/300/cats/1" alt="The cat.">
+            </button>
+          </div>
+
+          <div id="marley-the-cat" class="team__item js-team">
+            <h2 class="heading">Marley the Cat</h2>
+            <p class="team__count">Number of clicks: <span class="js-count">0</span></p>
+            <button class="team__button js-button">
+              <img src="http://lorempixel.com/300/300/cats/2" alt="The cat.">
+            </button>
+          </div>
+
+          <div id="william-the-cat" class="team__item js-team">
+            <h2 class="heading">William the Cat</h2>
+            <p class="team__count">Number of clicks: <span class="js-count">0</span></p>
+            <button class="team__button js-button">
+              <img src="http://lorempixel.com/300/300/cats/3" alt="The cat.">
+            </button>
+          </div>
+
+          <div id="shakes-the-cat" class="team__item js-team">
+            <h2 class="heading">Shakes the Cat</h2>
+            <p class="team__count">Number of clicks: <span class="js-count">0</span></p>
+            <button class="team__button js-button">
+              <img src="http://lorempixel.com/300/300/cats/4" alt="The cat.">
+            </button>
+          </div>
+
+          <div id="peare-the-cat" class="team__item js-team">
+            <h2 class="heading">Peare the Cat</h2>
+            <p class="team__count">Number of clicks: <span class="js-count">0</span></p>
+            <button class="team__button js-button">
+              <img src="http://lorempixel.com/300/300/cats/5" alt="The cat.">
+            </button>
+          </div>
+        </div>
+
       </div>
-
-      <div class="team__item js-team">
-        <p>Number of clicks: <span class="js-count">0</span></p>
-        <button class="js-button">
-          <img src="http://lorempixel.com/300/300/cats/2" alt="">
-          <span class="team__name">Marley the Cat</span>
-        </button>
-      </div>
-    </div>
-
+    </main>
   </div>
-</main>
+</div>

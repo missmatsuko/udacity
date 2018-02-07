@@ -1,7 +1,11 @@
+// Variables
+$primary: #3daaa3;
+
+// Base
 body {
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
-  background-color: #355c7d;
+  background-color: $primary;
   color: white;
 }
 
@@ -11,7 +15,12 @@ button {
   display: inline-block;
 }
 
-.main {
+a {
+  color: inherit;
+}
+
+// Theme
+.container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,19 +31,65 @@ button {
   }
 }
 
-.heading, .subheading {
+.heading {
   margin: 0;
+
+  &--main {
+    font-family: 'Carter One', cursive;
+    font-size: 3em;
+  }
+}
+
+.nav {
+  margin: 1em 0;
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin: 0.5em 0.25em;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: white;
+      padding: 0.5em 1em;
+      border: 2px solid white;
+      border-radius: 4px;
+      font-weight: bold;
+
+      &.active {
+        color: $primary;
+        background-color: white;
+      }
+    }
+  }
 }
 
 .team {
-  display: flex;
+  background-color: white;
+  color: $primary;
+  border-radius: 10px;
 
   &__item {
-    padding: 20px;
+    padding: 3em;
+    display: none;
+
+    &.active {
+      display: block;
+    }
   }
 
-  &__name {
-    display: block;
-    padding: 15px;
+  &__count {
+    margin: 0;
   }
+
+  &__button {
+    margin: 1em 0;
+  }
+
 }
