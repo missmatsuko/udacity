@@ -1,4 +1,5 @@
 # Cat Clicker
+View on CodePen: https://codepen.io/missmatsuko/pen/RQGVrK
 
 ## Requirements
 The requirements for this lesson's project keep changing.
